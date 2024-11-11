@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo -n "Sisesta reisijate arv: "
+
+read arv
+
+echo -n "Sisesta kohtade arv: "
+
+read kohad
+
+#Kui palju busse oleks vaja
+bussid=$(($arv / $kohad))
+#Mitu inimest maha jääks
+liigapalju=$(($arv % $kohad))
+
+#Väljastab andmete abil mitu bussi on vaja, ja paljud jääksid maha
+if test $liigapalju -gt 0; then
+      bussid=$(($bussid + 1))
+      echo "$arv inimese jaoks oleks vaja $bussid $kohad -list bussi, muidu jääks maha $liigapalju inimest"
+else
+      echo "$arv mahtusid ära $bussid bussile"
+
+fi
