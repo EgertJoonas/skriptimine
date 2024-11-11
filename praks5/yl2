@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#Küsib kasutajalt andmeid
+echo -e "Sisesta kuu number: \c"
+read kuu
+
+#Väljastab mis aastaaeg on kui on õige number antud
+
+if test $kuu -eq 1 -o $kuu -eq 2 -o $kuu -eq 12; then
+        echo "Praegu on Talv"
+elif test $kuu -ge 3 -a $kuu -le 5; then
+        echo "Praegu on Kevad"
+elif test $kuu -ge 6 -a $kuu -le 8; then
+        echo "Praegu on Suvi"
+elif test $kuu -ge 9 -a $kuu -le 11; then
+        echo "Praegu on Sugis"
+else
+        echo "Vale kuu number"
+fi
+#Skript on läbi
