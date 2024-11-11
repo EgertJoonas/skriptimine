@@ -1,4 +1,7 @@
 #!/bin/bash
 
-echo "Tere, kasutajanimi!"
+#Tervitab kasutajat
+
+
+echo "Tere,$(whoami)!"
 
