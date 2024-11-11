@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#Võtab kellaja kasutajalt automaatselt
+aeg=$(date +%H)
+
+#Kontrollime aega
+
+if test $aeg -ge 6 -a $aeg -lt 12
+then
+        echo "Tere hommikust, $(whoami)!"
+elif test $aeg -ge 12 -a $aeg -lt 18
+then
+        echo "Tere päevast, $(whoami)!"
+elif test $aeg -ge 18 -a $aeg -lt 22
+then
+        echo "Tere õhtust, $(whoami)!"
+elif test $aeg -le 23
+then
+        echo "Head ööd, $(whoami)"
+else
+        echo "Valed andmed!"
+fi
