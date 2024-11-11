@@ -1,11 +1,13 @@
 #!/bin/bash
 
+#Küsib kasutajalt arvu
 nano -n "Sisesta suvaline täisarv: "
 
 read number
 
+#jagab arvu kahega
 arv=$(( $number % 2))
-
+#Vaatab kas arvul jääk on 0 või mitte
 if [ $arv -eq 0 ]
 then
     echo "arv on paaris"
