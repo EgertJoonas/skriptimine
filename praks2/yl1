@@ -2,6 +2,7 @@
 
 #Tervitab kasutajat
 
+#$(whoami) tagastab praeguse kasutajakonto nime
 
 echo "Tere,$(whoami)!"
 
