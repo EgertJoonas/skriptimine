@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#Kuu,päeva ja aasta info saamine
+v1=$(date +"%A %d %b %Y")
+#Kella näitamine
+v2=$(date +"%H:%M")
+#Kalendri jaoks kuu ja aasta
+v3=$(date +"Kalender of %B %Y")
+#Kalender
+v4=$(cal | tail -n 7)
+echo "Täna on $v1" 
+echo 
+echo "Kell on $v2"
+echo
+echo "$v3"
+
+echo "$v4"
