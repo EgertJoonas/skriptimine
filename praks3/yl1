@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#Küsib kasutajalt nime
+echo -n "Sisesta oma ees- ja perenimi: "
+
+#Salvestab selle info eesnimi ja perenimena
+read eesnimi perenimi
+
+#Väljastab selle info
+echo "Tere tulemast,$eesnimi $perenimi"
